@@ -4,9 +4,10 @@ const formatter = new Intl.NumberFormat("id-ID", {
 })
 
 class Human {
-  constructor(name, age) {
+  constructor(name = "Unknown", age = 0, status = "Single") {
     this.name = name
     this.age = age
+    this.status = status
   }
 
   getName() {
